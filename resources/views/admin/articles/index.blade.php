@@ -30,7 +30,7 @@
 
 
                         <form onsubmit="if(confirm('Delete?')){return true} else{return false}"
-                              action='{{route('admin.article.destroy', $articlex)}}'
+                              action='{{route('admin.article.destroy', $article)}}'
                               method='POST'>
                             <input type="hidden" name="_method" value="DELETE">
                             {{csrf_field()}}
