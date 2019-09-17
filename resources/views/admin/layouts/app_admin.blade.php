@@ -36,12 +36,15 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <!-- Left Side Of Navbar -->
                 <ul class="navbar-nav mr-auto">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                    <li >
+                        <a class="nav-link" href="{{route('admin.index')}}">Check Panel</a>
+                    </li>
+                    <li class="dropdown pl-3 pt-2">
+                        <a class="dropdown-toggle" data-toggle="dropdown"
                            role="button" aria-expanded="false">Blog</a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="{{route('admin.category.index')}}">Categories</a> </li>
-                            <li><a href="{{route('admin.article.index')}}">Materials</a> </li>
+                            <li><a  class="nav-link" href="{{route('admin.category.index')}}">Categories</a> </li>
+                            <li><a  class="nav-link" href="{{route('admin.article.index')}}">Materials</a> </li>
                         </ul>
                     </li>
                 </ul>
